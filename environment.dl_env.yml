@@ -1,0 +1,11 @@
+name: dl_env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy
+  - pillow
+  - pytorch
+  - torchvision
