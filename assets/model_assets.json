@@ -1,0 +1,166 @@
+{
+  "selected_radiomics_features": [
+    "wavelet-LLH_glcm_Imc1_C",
+    "wavelet-LLH_gldm_LargeDependenceLowGrayLevelEmphasis_C",
+    "wavelet-HHH_glcm_MaximumProbability_C",
+    "wavelet-LLL_firstorder_InterquartileRange_C",
+    "wavelet-LLL_firstorder_RobustMeanAbsoluteDeviation_C",
+    "wavelet-LLL_firstorder_Skewness_C",
+    "wavelet-LLL_gldm_GrayLevelNonUniformity_C",
+    "wavelet-LLL_glrlm_RunVariance_C"
+  ],
+  "selected_deep_features": [
+    "D115",
+    "D213",
+    "D387",
+    "D610",
+    "D651",
+    "D1013",
+    "D1228",
+    "D1264",
+    "D1306",
+    "D1366",
+    "D1416"
+  ],
+  "feature_scaling": {
+    "wavelet-LLH_glcm_Imc1_C": {
+      "mean": -0.04201426213793104,
+      "scale": 0.10455633434549784
+    },
+    "wavelet-LLH_gldm_LargeDependenceLowGrayLevelEmphasis_C": {
+      "mean": 18.999340241448277,
+      "scale": 1.4081200494899728
+    },
+    "wavelet-HHH_glcm_MaximumProbability_C": {
+      "mean": 0.2900182845896552,
+      "scale": 0.004345787024450855
+    },
+    "wavelet-LLL_firstorder_InterquartileRange_C": {
+      "mean": 8.554765507268966,
+      "scale": 4.790147390337726
+    },
+    "wavelet-LLL_firstorder_RobustMeanAbsoluteDeviation_C": {
+      "mean": 3.655405708517241,
+      "scale": 2.102631862953264
+    },
+    "wavelet-LLL_firstorder_Skewness_C": {
+      "mean": 0.702564650475862,
+      "scale": 0.6216902419385926
+    },
+    "wavelet-LLL_gldm_GrayLevelNonUniformity_C": {
+      "mean": 2547.616839430172,
+      "scale": 1654.9079898490072
+    },
+    "wavelet-LLL_glrlm_RunVariance_C": {
+      "mean": 210.38713473201724,
+      "scale": 170.44410181281282
+    },
+    "D115": {
+      "mean": 0.6361373469655173,
+      "scale": 0.15933294227086678
+    },
+    "D213": {
+      "mean": 0.2365436887362069,
+      "scale": 0.2103160591543929
+    },
+    "D387": {
+      "mean": 0.05698330451551724,
+      "scale": 0.03880443346043631
+    },
+    "D610": {
+      "mean": 0.13172999910517244,
+      "scale": 0.08810731002597508
+    },
+    "D651": {
+      "mean": 0.1899205910137931,
+      "scale": 0.11913862132844824
+    },
+    "D1013": {
+      "mean": 0.24584485553620686,
+      "scale": 0.19901514848183693
+    },
+    "D1228": {
+      "mean": 0.3139436229,
+      "scale": 0.17532346667703547
+    },
+    "D1264": {
+      "mean": 0.039271792856896554,
+      "scale": 0.02694102821095449
+    },
+    "D1306": {
+      "mean": 0.26514764472758623,
+      "scale": 0.15345502193164684
+    },
+    "D1366": {
+      "mean": 0.1048425364413793,
+      "scale": 0.05294732407189614
+    },
+    "D1416": {
+      "mean": 0.7928968540862069,
+      "scale": 0.167702459547132
+    }
+  },
+  "radscore_model": {
+    "weights": {
+      "wavelet-LLH_glcm_Imc1_C": 0.03302626824607386,
+      "wavelet-LLH_gldm_LargeDependenceLowGrayLevelEmphasis_C": -0.004670717455758735,
+      "wavelet-HHH_glcm_MaximumProbability_C": 0.0016152129608549613,
+      "wavelet-LLL_firstorder_InterquartileRange_C": 0.03237227486814305,
+      "wavelet-LLL_firstorder_RobustMeanAbsoluteDeviation_C": 0.0011145809373548756,
+      "wavelet-LLL_firstorder_Skewness_C": 0.10474515575406475,
+      "wavelet-LLL_gldm_GrayLevelNonUniformity_C": -0.010237236432019408,
+      "wavelet-LLL_glrlm_RunVariance_C": -0.008705344543211195,
+      "D115": -0.01129920027905883,
+      "D213": -0.0274074363674459,
+      "D387": -0.011267262548470774,
+      "D610": -0.054788794968100685,
+      "D651": 0.010529547734719044,
+      "D1013": -0.0003436549021092154,
+      "D1228": 0.03516763548875549,
+      "D1264": 0.006714820010665452,
+      "D1306": 0.013331663841251916,
+      "D1366": -0.030109376414965597,
+      "D1416": 0.007315704032820523
+    },
+    "intercept": 0.0
+  },
+  "diagnostic_model": {
+    "intercept": 1.8236443223876357,
+    "weights": {
+      "Age": -0.03943053351096458,
+      "Acquisition_view": 0.6162446642158111,
+      "Radscore": 6.406173750654636
+    },
+    "positive_label": "Malignant / Bone metastasis",
+    "negative_label": "Benign lesion",
+    "threshold": 0.5
+  },
+  "point_formula": {
+    "Age": -0.35590399996992605,
+    "Acquisition_view": 6.850468000219807,
+    "Radscore": 76.92307699821475,
+    "Intercept": 63.64240599757411
+  },
+  "prognosis_thresholds": {
+    "overall_center1_youden": 61.98301462,
+    "solitary_center1_youden": 49.45869677
+  },
+  "notes": {
+    "deep_backbone": "ResNet101 pooled feature before final FC (2048 dims)",
+    "deep_preprocess": "Crop bbox from rendered WBS image, resize to 512x512, ToTensor only, no ImageNet normalization",
+    "radiomics_settings": {
+      "binWidth": 25,
+      "resampledPixelSpacing": [
+        1,
+        1,
+        1
+      ],
+      "normalize": true,
+      "imageTypes": [
+        "Original",
+        "LoG(sigma=1,2,3,4,5)",
+        "Wavelet"
+      ]
+    }
+  }
+}
